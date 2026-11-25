@@ -14,4 +14,4 @@ if not os.path.exists(SRC):
 os.makedirs(os.path.dirname(DST), exist_ok=True)
 shutil.copyfile(SRC, DST)
 # The copy is byte-for-byte identical to the bundled image, by design.
-print(DST)
+print(DST, os.path.getsize(DST))
